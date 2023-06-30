@@ -5,7 +5,7 @@ from multiprocessing import Pool as ProcessPool
 import process_image
 
 def process(n_processes, n_threads, fnames):
-    print(f"Controller with {n_processes} processes and {n_threads} / worker")
+    print(f"Controller with {n_processes} processes and {n_threads} threads / worker")
 
     # The environment that is set in the parent is inherited by child workers,
     # but here process_image import numpy, so we need to set the variable

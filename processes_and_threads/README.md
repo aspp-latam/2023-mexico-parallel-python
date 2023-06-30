@@ -6,9 +6,11 @@ It is also an importable module. `process_image.magic("foo.jpg")`
 It should be called as following:
 `process_multiple_images n_processes n_threads filename1.png filename2.png …`
 
+0. `git pull`
+
 1. start a separate terminal window with `htop`: `gnome-terminal -- htop &`
 
-2. call `python process_multiple_images.py 2 2 /usr/share/backgrounds/*/*/*.png`
+2. call `python process_multiple_images.py 2 2 images/*.png`
 
 You should see `htop` showing 4 threads (2 worked processes × 2 numpy threads).
 
